@@ -8,12 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DayFive\DayFive.csproj" />
-    <ProjectReference Include="..\DayFour\DayFour.csproj" />
-    <ProjectReference Include="..\DayOne\DayOne.csproj" />
-    <ProjectReference Include="..\DaySix\DaySix.csproj" />
-    <ProjectReference Include="..\DayThree\DayThree.csproj" />
-    <ProjectReference Include="..\DayTwo\DayTwo.csproj" />
+    <ProjectReference Include="..\DaySeven\DaySeven.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DaySeven">
+      <HintPath>..\DaySeven\bin\Debug\net6.0\DaySeven.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
