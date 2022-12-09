@@ -11,6 +11,7 @@
     <ProjectReference Include="..\DayEight\DayEight.csproj" />
     <ProjectReference Include="..\DayFive\DayFive.csproj" />
     <ProjectReference Include="..\DayFour\DayFour.csproj" />
+    <ProjectReference Include="..\DayNine\DayNine.csproj" />
     <ProjectReference Include="..\DayOne\DayOne.csproj" />
     <ProjectReference Include="..\DaySeven\DaySeven.csproj" />
     <ProjectReference Include="..\DaySix\DaySix.csproj" />
