@@ -27,9 +27,12 @@ namespace AdventOfCode {
             //DayEight day8 = new DayEight();
             //day8.Solve1();
             //day8.Solve2();
-            DayNine day9 = new DayNine();
-            day9.Solve1();
-            day9.Solve2();
+            //DayNine day9 = new DayNine();
+            //day9.Solve1();
+            //day9.Solve2();
+            DayTen day10 = new DayTen();
+            day10.Solve1();
+            day10.Solve2();
         }
     }
 
