@@ -30,9 +30,12 @@ namespace AdventOfCode {
             //DayNine day9 = new DayNine();
             //day9.Solve1();
             //day9.Solve2();
-            DayTen day10 = new DayTen();
-            day10.Solve1();
-            day10.Solve2();
+            //DayTen day10 = new DayTen();
+            //day10.Solve1();
+            //day10.Solve2();
+            DayEleven day11 = new DayEleven();
+            day11.Solve1();
+            day11.Solve2();
         }
     }
 
