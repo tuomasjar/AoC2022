@@ -3,6 +3,7 @@ using System.Numerics;
 
 namespace AdventOfCode {
     public class DayEleven {
+        private static ulong sumValue = 1;
         public enum Operation {
             ADD,
             MULTIPLY
@@ -56,6 +57,7 @@ namespace AdventOfCode {
             }
         }
         public void Solve1() {
+            sumValue = 1UL;
             List<MonkeyPart1> monkeys= new List<MonkeyPart1>();
             using (StreamReader inputFile = File.OpenText(@"D11InputText.txt")) {
                 while (!inputFile.EndOfStream) {
@@ -142,6 +144,7 @@ namespace AdventOfCode {
             int isTrue = 0;
             int isFalse = 0;
             List<ulong> testList;
+            
 
             public Fling inspect() {
                 if (testList.Count == 0) { return new Fling(-1, 0); }
@@ -155,8 +158,8 @@ namespace AdventOfCode {
                         testList[0] = testList[0] * (ulong)amount;
                     }
                 }
-                ulong sumValue = 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19;
-                if (testList[0] / sumValue!=0) testList[0] = testList[0] - sumValue*(testList[0]/ sumValue);
+               
+                testList[0] = testList[0] % sumValue;
                 if (testList[0] % (ulong)test == 0) {
                     result.monkey = isTrue;
                     result.item = testList[0];
@@ -175,6 +178,7 @@ namespace AdventOfCode {
         }
 
         public void Solve2() {
+            sumValue = 1UL;
             List<Monkey> monkeys = new List<Monkey>();
             using (StreamReader inputFile = File.OpenText(@"D11InputText.txt")) {
                 while (!inputFile.EndOfStream) {
@@ -199,6 +203,7 @@ namespace AdventOfCode {
                         amount = -1;
                     }
                     int testeri = Convert.ToInt32(tester.Split(" ")[tester.Split(" ").Length - 1]);
+                    sumValue *= (ulong)testeri;
                     int totta = Convert.ToInt32(tosi.Split(" ")[tosi.Split(" ").Length - 1]);
                     int eitotta = Convert.ToInt32(eitosi.Split(" ")[eitosi.Split(" ").Length - 1]);
                     Monkey monkey = new Monkey(oper, amount, testeri, totta, eitotta);
