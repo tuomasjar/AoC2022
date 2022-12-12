@@ -18,6 +18,7 @@
     <ProjectReference Include="..\DaySix\DaySix.csproj" />
     <ProjectReference Include="..\DayTen\DayTen.csproj" />
     <ProjectReference Include="..\DayThree\DayThree.csproj" />
+    <ProjectReference Include="..\DayTwelve\DayTwelve.csproj" />
     <ProjectReference Include="..\DayTwo\DayTwo.csproj" />
   </ItemGroup>
 
@@ -30,6 +31,9 @@
     </Reference>
     <Reference Include="DayTen">
       <HintPath>..\DayTen\bin\Debug\net6.0\DayTen.dll</HintPath>
+    </Reference>
+    <Reference Include="DayTwelve">
+      <HintPath>..\DayTwelve\bin\Debug\net6.0\DayTwelve.dll</HintPath>
     </Reference>
   </ItemGroup>
 
