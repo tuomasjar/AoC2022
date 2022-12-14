@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\DayFourteen.csproj" />
     <ProjectReference Include="..\DayEight\DayEight.csproj" />
     <ProjectReference Include="..\DayEleven\DayEleven.csproj" />
     <ProjectReference Include="..\DayFive\DayFive.csproj" />
@@ -17,6 +18,7 @@
     <ProjectReference Include="..\DaySeven\DaySeven.csproj" />
     <ProjectReference Include="..\DaySix\DaySix.csproj" />
     <ProjectReference Include="..\DayTen\DayTen.csproj" />
+    <ProjectReference Include="..\DayThirteen\DayThirteen.csproj" />
     <ProjectReference Include="..\DayThree\DayThree.csproj" />
     <ProjectReference Include="..\DayTwelve\DayTwelve.csproj" />
     <ProjectReference Include="..\DayTwo\DayTwo.csproj" />
@@ -31,6 +33,9 @@
     </Reference>
     <Reference Include="DayTen">
       <HintPath>..\DayTen\bin\Debug\net6.0\DayTen.dll</HintPath>
+    </Reference>
+    <Reference Include="DayThirteen">
+      <HintPath>..\DayThirteen\bin\Debug\net6.0\DayThirteen.dll</HintPath>
     </Reference>
     <Reference Include="DayTwelve">
       <HintPath>..\DayTwelve\bin\Debug\net6.0\DayTwelve.dll</HintPath>
